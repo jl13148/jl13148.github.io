@@ -736,6 +736,10 @@ footer.sticky-bottom .container {
   text-decoration: none;
 }
 
+.film-grid figure {
+  margin-top: 0;
+}
+
 .projects a {
   text-decoration: none;
 }
