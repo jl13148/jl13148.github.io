@@ -868,39 +868,44 @@ footer.sticky-bottom .container {
 .publications ol.bibliography li .badges span:hover {
   text-decoration: underline;
 }
-.publications ol.bibliography li .hidden {
+.publications ol.bibliography li .hidden,
+.publications ol.bibliography li div.abstract.hidden {
   font-size: 0.875rem;
   max-height: 0px;
   overflow: hidden;
   text-align: justify;
-  transition-property: 0.15s ease;
-  -moz-transition: 0.15s ease;
-  -ms-transition: 0.15s ease;
-  -o-transition: 0.15s ease;
-  transition: all 0.15s ease;
+  transition-property: 0.01s ease;
+  -moz-transition: 0.01s ease;
+  -ms-transition: 0.01s ease;
+  -o-transition: 0.01s ease;
+  transition: all 0.01s ease;
+  border: 1px solid transparent;
+  padding: 0;
+  margin-top: 0;
 }
-.publications ol.bibliography li .hidden p {
+.publications ol.bibliography li .hidden p,
+.publications ol.bibliography li div.abstract.hidden p {
   line-height: 1.4em;
   margin: 10px;
 }
-.publications ol.bibliography li .hidden pre {
+.publications ol.bibliography li .hidden pre,
+.publications ol.bibliography li div.abstract.hidden pre {
   font-size: 1em;
   line-height: 1.4em;
   padding: 10px;
 }
-.publications ol.bibliography li .hidden.open {
-  max-height: 100em;
-  transition-property: 0.15s ease;
-  -moz-transition: 0.15s ease;
-  -ms-transition: 0.15s ease;
-  -o-transition: 0.15s ease;
-  transition: all 0.15s ease;
-}
-.publications ol.bibliography li div.abstract.hidden {
-  border: dashed 1px var(--global-bg-color);
-}
+.publications ol.bibliography li .hidden.open,
 .publications ol.bibliography li div.abstract.hidden.open {
-  border-color: var(--global-text-color);
+  max-height: 100em;
+  transition-property: 0.01s ease;
+  -moz-transition: 0.01s ease;
+  -ms-transition: 0.01s ease;
+  -o-transition: 0.01s ease;
+  transition: all 0.01s ease;
+  border: 1px solid var(--global-divider-color);
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 .publications ol.bibliography div.award.hidden {
   border: dashed 1px var(--global-bg-color);
